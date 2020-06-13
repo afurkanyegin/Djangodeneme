@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+## Create your models here.
 class Category(models.Model):
     STATUS=(('True','Evet'),('False','Hayır'),)
     parent =models.ForeignKey('self',blank=True,null=True,related_name='children',on_delete=models.CASCADE)
